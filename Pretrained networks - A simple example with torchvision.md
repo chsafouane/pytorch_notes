@@ -79,7 +79,7 @@ To normalize the output to a range of [0, 1] and to get a sum of 1 for all predi
 prob_prediction = torch.nn.functional.softmax(prediction, 1) # [1, 1000]
 ````
 
-**Please,** **if you get lost when using pytorch tensors**, feel free to check the shape of the tensors along the way `my_tensor.shape`. It's a very good way of understanding what going on and how each operation does.
+**Please,** **if you get lost when using pytorch tensors**, feel free to check the shape of the tensors along the way `my_tensor.shape`. It's a very good way of understanding what going on and what each operation does.
 
 Now that we have prediction that we can interpret as probabilities, we'll find out the max value and its index
 
