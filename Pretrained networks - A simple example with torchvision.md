@@ -2,7 +2,7 @@
 
 [Torchvision](https://pytorch.org/docs/stable/torchvision/index.html) is part of the [Torch](https://pytorch.org/) project. Torchvision includes pretrained models for vision tasks.
 
-the module **models** contains many vision models.
+The module `models` contains many vision models.
 
 ```python
 # models contains pretrained models
@@ -14,7 +14,7 @@ from torchvision import models
 resnet = models.resnet101(pretrained=True)
 ```
 
-The pretrained resnet101 model included in pytorch was trained on Imagenet. Imagenet includes 1000 categories. The pretrained network spits out 1000 outputs, with a prediction for each class. This is going to come in play once we get our predictions.
+The pretrained resnet101[^1] model included in pytorch was trained on Imagenet. Imagenet includes 1000 categories. The pretrained network spits out 1000 outputs, with a prediction for each class. This is going to come in play once we get our predictions.
 
 The pretrained resnet model needs the images to have a very specific size. One has to resize the images before feeding them to the model. Applying the **same transformations** as the ones applied while training the model is mandatory.
 
@@ -94,3 +94,4 @@ value.item() # The maximum prediction value - It can be interpreted as a probabi
 index.item() # The index of the class with the maximum prediction
 ````
 
+[^1]: The link to the resnet paper https://arxiv.org/pdf/1512.03385.pdf
