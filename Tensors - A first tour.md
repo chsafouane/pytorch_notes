@@ -59,7 +59,7 @@ Now, to go from the underlying storage to the tensor itself, there are three ele
 
   This tensor uses the same underlying as `ex_tensor` and doesn't use a new storage. But as it only starts from the second row of `ex_tensor`, the reading from storage is offset by 3, which the number of steps necessary to get to the first element of `ex_sec_tensor` in the storage. What one should remember is that when reshaping or indexing into tensors, you're just having a new view of the underlying storage.  
 
-This image from **Deep Learning with Pytorch** sums it all up.
+This image from **[Deep Learning with Pytorch](https://www.manning.com/books/deep-learning-with-pytorch)** (which I truly encourage you to read) sums it all up.
 
 
 
