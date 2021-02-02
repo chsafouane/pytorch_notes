@@ -55,6 +55,9 @@ Now, to go from the underlying storage to the tensor itself, there are three ele
 
   ````python
   ex_sec_tensor = ex_tensor[1:, :]
+  ex_sec_tensor
+  # tensor([[4, 5, 6],
+  #         [7, 8, 9]], dtype=torch.int32)
   ````
 
   This tensor uses the same underlying as `ex_tensor` and doesn't use a new storage. But as it only starts from the second row of `ex_tensor`, the reading from storage is offset by 3, which the number of steps necessary to get to the first element of `ex_sec_tensor` in the storage. What one should remember is that when reshaping or indexing into tensors, you're just having a new view of the underlying storage.  
