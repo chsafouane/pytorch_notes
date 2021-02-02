@@ -2,6 +2,8 @@
 
 In this first tour, we'll discuss the most basic type of tensors in Pytorch, dense arrays. Tensors will be discussed in a later markdown in much more details.
 
+### What is a tensor ?
+
 [Tensors in Pytorch](https://pytorch.org/docs/stable/tensors.html#torch-tensor) are simply multidimensional arrays that can store one data type. Tensors can be created using the `torch.tensor()`constructor or directly from a list object or a numpy array.
 
 ````python
@@ -86,6 +88,6 @@ ex_tensor.device
 # device(type='cpu')
 ````
 
+### Tensor operations
 
-
-Tensors support a wide variety of operations. These operations have numpy-like syntax.
+Tensors support a wide variety of operations. These operations have a numpy-like syntax.
