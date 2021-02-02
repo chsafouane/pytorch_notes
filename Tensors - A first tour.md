@@ -63,7 +63,7 @@ This image from **Deep Learning with Pytorch** sums it all up.
 
 
 
-![image-20210202075749034](.\assets\image-20210202075749034.png)
+![image-20210202075749034](assets\image-20210202075749034.png)
 
 [WIP]
 
